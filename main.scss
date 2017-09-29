@@ -189,6 +189,12 @@ h4 {
   }
 }
 
+.marquee {
+  img {
+    max-width: 100%;
+  }
+}
+
 .project-info {
   &__title {
     display: inline-block;
@@ -200,12 +206,31 @@ h4 {
 
   &__arrows {
     text-align: right;
+
+    img { 
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  &--footer {
+    border-bottom: 1px solid gray;
+    margin-bottom: 2em;
   }
 }
 
 .three-up {
   &__content {
-    padding: 2em 2.5em;
+    padding: 2em 4em;
+  }
+}
+
+.assets {
+  background-image: url('images/background.jpg');
+
+  img {
+    padding: 4em 0;
+    max-width: 100%;
   }
 }
 

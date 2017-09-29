@@ -1044,15 +1044,30 @@ h4 {
       -webkit-column-count: 3;
       column-count: 3; } }
 
+.marquee img {
+  max-width: 100%; }
+
 .project-info__title {
   display: inline-block; }
 .project-info p {
   display: inline-block; }
 .project-info__arrows {
   text-align: right; }
+  .project-info__arrows img {
+    height: 50px;
+    width: 50px; }
+.project-info--footer {
+  border-bottom: 1px solid gray;
+  margin-bottom: 2em; }
 
 .three-up__content {
-  padding: 2em 2.5em; }
+  padding: 2em 4em; }
+
+.assets {
+  background-image: url("images/background.jpg"); }
+  .assets img {
+    padding: 4em 0;
+    max-width: 100%; }
 
 .footer a {
   display: block; }
