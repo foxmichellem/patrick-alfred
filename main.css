@@ -477,7 +477,7 @@
     order: 1; } }
 @media only screen and (min-width: 64em) {
   .container {
-    width: 60em; }
+    width: 68em; }
 
   .col-md,
   .col-md-1,
@@ -694,7 +694,7 @@
     order: 1; } }
 @media only screen and (min-width: 75em) {
   .container {
-    width: 60em; }
+    width: 68em; }
 
   .col-lg,
   .col-lg-1,
@@ -914,7 +914,7 @@
 
 @font-face {
   font-family: Aften;
-  src: url(aften.ttf); }
+  src: url(Aften.ttf); }
 @font-face {
   font-family: Aften-Bold;
   src: url(Aften-Screen-Bold.ttf); }
@@ -923,8 +923,10 @@
   src: url(Satyr10.otf); }
 body {
   font-family: Aften;
+  font-size: 16px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  color: #333; }
 
 .main {
   background-image: url("images/background.jpg");
@@ -949,6 +951,10 @@ h4 {
     height: 20px; }
   .nav__links {
     text-align: right; }
+    .nav__links a {
+      padding: 0 1em; }
+      .nav__links a:last-of-type {
+        padding-right: 0; }
 
 .sidebar-nav {
   background-color: #fff;
@@ -1047,29 +1053,51 @@ h4 {
 .marquee img {
   max-width: 100%; }
 
-.project-info__title {
-  display: inline-block; }
-.project-info p {
-  display: inline-block; }
-.project-info__arrows {
-  text-align: right; }
-  .project-info__arrows img {
-    height: 50px;
-    width: 50px; }
-.project-info--footer {
-  border-bottom: 1px solid gray;
-  margin-bottom: 2em; }
+.project-info {
+  padding: 1.5em 0 .5em; }
+  .project-info__title {
+    display: inline-block; }
+  .project-info h3 {
+    margin: 0;
+    padding-right: 1em; }
+  .project-info p {
+    display: inline-block;
+    margin: 0;
+    color: #858585;
+    padding: 0 1em; }
+  .project-info__arrows {
+    text-align: right; }
+    .project-info__arrows img {
+      height: 22px;
+      width: 22px; }
+  .project-info__border {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eaeaea; }
 
-.three-up__content {
-  padding: 2em 4em; }
+.three-up {
+  margin: 2em; }
+  .three-up__header {
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .three-up__content {
+    text-align: left; }
+    @media only screen and (min-width: 48em) {
+      .three-up__content {
+        padding: 0 1em; } }
+  .three-up__copy {
+    color: #858585; }
 
 .assets {
-  background-image: url("images/background.jpg"); }
+  background-color: #95a0af;
+  padding: 4em 0; }
   .assets img {
-    padding: 4em 0;
+    margin: 3em 0;
+    box-shadow: 4px 7px 100px 40px rgba(51, 51, 51, 0.2);
     max-width: 100%; }
 
-.footer a {
-  display: block; }
+.footer {
+  padding: 1em 0 2em; }
+  .footer a {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */

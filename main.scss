@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: Aften;
-  src: url(aften.ttf);
+  src: url(Aften.ttf);
 }
 
 @font-face {
@@ -18,8 +18,10 @@
 
 body {
   font-family: Aften;
+  font-size: 16px;
   padding: 0;
   margin: 0;
+  color: #333;
 }
 
 .main {
@@ -54,6 +56,14 @@ h4 {
 
   &__links {
     text-align: right;
+    
+    a {
+      padding: 0 1em;
+      
+      &:last-of-type{
+        padding-right: 0;
+      }
+    }
   }
 }
 
@@ -196,45 +206,75 @@ h4 {
 }
 
 .project-info {
+  padding: 1.5em 0 .5em;
+
   &__title {
     display: inline-block;
   }
 
+  h3 {
+    margin: 0;
+    padding-right: 1em;
+  }
+
   p {
     display: inline-block;
+    margin: 0;
+    color: #858585;
+    padding: 0 1em;
   }
 
   &__arrows {
     text-align: right;
 
     img { 
-      height: 50px;
-      width: 50px;
+      height: 22px;
+      width: 22px;
     }
   }
 
-  &--footer {
-    border-bottom: 1px solid gray;
-    margin-bottom: 2em;
+  &__border {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eaeaea;
   }
+
 }
 
 .three-up {
+  margin: 2em;
+
+  &__header {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
   &__content {
-    padding: 2em 4em;
+    text-align: left;
+
+    @media only screen and (min-width: 48em) {
+      padding: 0 1em;
+    }
+  }
+
+  &__copy {
+    color: #858585;
   }
 }
 
 .assets {
-  background-image: url('images/background.jpg');
+  background-color: #95a0af;
+  padding: 4em 0;
 
   img {
-    padding: 4em 0;
+    margin: 3em 0;
+    box-shadow: 4px 7px 100px 40px rgba(51, 51, 51, 0.2);
+    //fix the width so that its never greater than 900
     max-width: 100%;
   }
 }
 
 .footer {
+  padding: 1em 0 2em;
   a {
     display: block;
   }
