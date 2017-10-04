@@ -39,6 +39,14 @@ h4 {
   font-size: 22px;
 }
 
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
 .nav {
   background-color: #1370fb;
   color: #fff;
@@ -224,7 +232,7 @@ h4 {
     padding: 0 1em;
   }
 
-  &__arrows {
+  &__actions {
     text-align: right;
 
     img { 
@@ -241,7 +249,7 @@ h4 {
 }
 
 .three-up {
-  margin: 2em;
+  margin: 2em 0;
 
   &__header {
     font-size: 16px;
@@ -277,5 +285,23 @@ h4 {
   padding: 1em 0 2em;
   a {
     display: block;
+  }
+}
+
+.resume {
+  color: #858585;
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: .5em;
+    color: #333;
+
+    &--light {
+      color: #858585;
+    }
+  }
+
+  &__organization {
+    font-weight: bold;
   }
 }

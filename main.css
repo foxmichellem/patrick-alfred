@@ -939,6 +939,11 @@ h4 {
   font-family: Aften-Bold;
   font-size: 22px; }
 
+a {
+  text-decoration: none; }
+  a:visited {
+    color: inherit; }
+
 .nav {
   background-color: #1370fb;
   color: #fff;
@@ -1065,9 +1070,9 @@ h4 {
     margin: 0;
     color: #858585;
     padding: 0 1em; }
-  .project-info__arrows {
+  .project-info__actions {
     text-align: right; }
-    .project-info__arrows img {
+    .project-info__actions img {
       height: 22px;
       width: 22px; }
   .project-info__border {
@@ -1099,5 +1104,16 @@ h4 {
   padding: 1em 0 2em; }
   .footer a {
     display: block; }
+
+.resume {
+  color: #858585; }
+  .resume__title {
+    font-weight: bold;
+    margin-bottom: .5em;
+    color: #333; }
+    .resume__title--light {
+      color: #858585; }
+  .resume__organization {
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
