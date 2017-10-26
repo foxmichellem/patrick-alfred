@@ -59,7 +59,8 @@ a {
 
   &__shapes {
     display: inline-block;
-    height: 20px;
+    width: 20px;
+    color: white;
   }
 
   &__links {
@@ -94,7 +95,8 @@ a {
   }
 
   .sidebar-nav__shapes {
-    width: 25%;
+    width: 100%;
+    fill: #fff;
   }
 
   .sidebar-nav__links {
@@ -146,7 +148,7 @@ a {
 
   a {
     text-decoration: none;
-    color: #000;
+    color: #333;
   }
 
   &__item {
@@ -157,6 +159,10 @@ a {
     min-width: 100%;
     background:  transparent;
     text-align: left;
+
+    &:hover {
+      filter: opacity(50%);
+    }
 
     &__image {
       max-width: 100%;
@@ -174,6 +180,10 @@ a {
         bottom: 0;
         right: 0;
       }
+    }
+
+    &__description {
+      color: #888;
     }
 
     &__content-container {
@@ -208,13 +218,14 @@ a {
 }
 
 .marquee {
+  padding-top: 4.5em;
   img {
     max-width: 100%;
   }
 }
 
 .project-info {
-  padding: 1.5em 0 .5em;
+  padding: 1.5em 0.5em 0.5em;
 
   &__title {
     display: inline-block;
@@ -228,16 +239,30 @@ a {
   p {
     display: inline-block;
     margin: 0;
-    color: #858585;
+    color: #ababab;
     padding: 0 1em;
   }
 
   &__actions {
     text-align: right;
 
+    a {
+      padding: 0 6px;
+      
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
     img { 
       height: 22px;
       width: 22px;
+    }
+
+    &--wnw {
+      img {
+        width: 30px;
+      }
     }
   }
 
@@ -279,6 +304,12 @@ a {
     //fix the width so that its never greater than 900
     max-width: 100%;
   }
+
+  &__thumbnail {
+    &:hover {
+      filter: brightness(50%);
+    }
+  }
 }
 
 .footer {
@@ -290,18 +321,88 @@ a {
 
 .resume {
   color: #858585;
+  padding: 0 0.5em;
+
+  p {
+    margin: 0;
+  }
+
+  &__accolades {
+    .resume__subtitle {
+      font-style: normal;
+    }
+  }
 
   &__title {
     font-weight: bold;
     margin-bottom: .5em;
     color: #333;
+    padding: 3px 0;
 
     &--light {
       color: #858585;
     }
   }
 
-  &__organization {
+  &__subtitle {
+    padding: 3px 0;
+    font-style: italic;
     font-weight: bold;
+  }
+
+  &__info {
+    font-size: 14px;
+    padding: 3px 0;
+  }
+
+
+  &__entry {
+    padding: 12px 0;
+
+    &:first-of-type {
+      padding-top: 24px;
+    }
+  }
+
+  &__education {
+    padding-bottom: 100px;
+  }
+
+  @media only screen and (min-width: 48em) {
+    .resume__work {
+      .resume__entry:last-of-type {
+        padding-bottom: 100px;
+      }
+    }
+    
+    .resume__education {
+      padding-bottom: 0;
+    }
+  }
+
+
+
+  &__list-item {
+    padding: 6px 0;
+  }
+}
+
+.contact {
+  padding: 0 0.5em;
+  color: #888;
+
+
+  &__content {
+    padding: 24px 0 100px;
+
+    img {
+      width: 100%;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__title {
+    color: #333;
+    margin-bottom: -1rem;
   }
 }
