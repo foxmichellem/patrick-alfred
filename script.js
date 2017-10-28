@@ -1,6 +1,8 @@
 $(document).ready(function() {
-  $('.nav__header').click(function(){
-    $(this).siblings().slideToggle(200);
+  $('.sidebar-nav__arrows').click(function(){
+    $('.sidebar-nav__header').siblings().slideToggle(200);
+    $('.sidebar-nav__arrows--up').toggleClass("sidebar-nav__arrows--hidden")
+    $('.sidebar-nav__arrows--down').toggleClass("sidebar-nav__arrows--hidden")
   });
 });
 

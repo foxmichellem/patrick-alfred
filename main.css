@@ -941,53 +941,83 @@ h4 {
 
 a {
   text-decoration: none; }
-  a:visited {
-    color: inherit; }
 
 .nav {
   background-color: #1370fb;
   color: #fff;
   padding: .5em; }
+  @media (max-width: 720px) {
+    .nav {
+      display: none; } }
   .nav p {
     display: inline-block;
     margin: 0; }
   .nav__shapes {
     display: inline-block;
-    width: 20px;
-    color: white; }
+    color: white;
+    width: 280px;
+    height: 20px; }
   .nav__links {
     text-align: right; }
     .nav__links a {
-      padding: 0 1em; }
+      padding: 0 1em;
+      color: white; }
       .nav__links a:last-of-type {
         padding-right: 0; }
+  .nav--footer {
+    background-color: #333; }
 
 .sidebar-nav {
   background-color: #fff;
   width: 100%; }
-  .sidebar-nav .sidebar-nav__header {
+  .sidebar-nav__header {
     background-color: #1370fb;
     text-align: left;
     padding: 1.5em;
     color: #f5f5f5; }
-    .sidebar-nav .sidebar-nav__header p {
+    @media (max-width: 720px) {
+      .sidebar-nav__header {
+        padding: 0 1.5em;
+        height: 50px; } }
+    .sidebar-nav__header p {
       margin: 0;
       font-size: 28px;
       font-family: Satyr; }
-  .sidebar-nav .sidebar-nav__shapes {
+  .sidebar-nav__shapes {
     width: 100%;
-    fill: #fff; }
-  .sidebar-nav .sidebar-nav__links {
+    display: none; }
+    @media (min-width: 720px) {
+      .sidebar-nav__shapes--desktop {
+        display: block; } }
+    @media (max-width: 720px) {
+      .sidebar-nav__shapes--mobile {
+        display: inline;
+        width: 50%;
+        height: 100%; } }
+  .sidebar-nav__links {
     padding: 1.5em; }
     @media only screen and (max-width: 720px) {
-      .sidebar-nav .sidebar-nav__links {
-        display: none; } }
-  .sidebar-nav .sidebar-nav__link {
+      .sidebar-nav__links {
+        display: none;
+        padding: 1.5em 1.5em 2em; } }
+  .sidebar-nav__link {
     display: block;
     padding: .5em .5em .5em 0;
     border-bottom: 1px solid #1370fb;
     color: #1370fb;
     margin-bottom: .25em; }
+  .sidebar-nav__arrows {
+    width: 25px;
+    float: right;
+    display: inline;
+    height: 100%; }
+    .sidebar-nav__arrows--hidden {
+      display: none; }
+  .sidebar-nav--mobile-only {
+    display: none; }
+    @media (max-width: 720px) {
+      .sidebar-nav--mobile-only {
+        display: inline; } }
   @media only screen and (min-width: 720px) {
     .sidebar-nav {
       width: 20%;
@@ -1078,6 +1108,9 @@ a {
     margin: 0;
     color: #ababab;
     padding: 0 1em; }
+    @media (max-width: 720px) {
+      .project-info p {
+        display: none; } }
   .project-info__actions {
     text-align: right; }
     .project-info__actions a {
@@ -1119,7 +1152,8 @@ a {
 .footer {
   padding: 1em 0 2em; }
   .footer a {
-    display: block; }
+    display: block;
+    color: #333; }
 
 .resume {
   color: #858585;
