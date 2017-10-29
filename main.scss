@@ -167,6 +167,12 @@ a {
 
   }
 
+  &--footer {
+    .sidebar-nav__links {
+      display: block;
+    }
+  }
+
   @media only screen and (min-width: 720px) {
     width: 20%;
     position: fixed;
@@ -369,8 +375,14 @@ a {
 }
 
 .footer {
-  padding: 1em 0 2em;
+  padding: 2em 0;
+
+  @media (max-width: 720px) {
+    padding: 0 0.5em 2em;
+  }
+
   a {
+    padding: 0.6em 0;
     display: block;
     color: #333;
   }
@@ -398,6 +410,10 @@ a {
 
     &--light {
       color: #858585;
+    }
+
+    &--section {
+      color: #1370fb;
     }
   }
 
@@ -461,5 +477,60 @@ a {
   &__title {
     color: #333;
     margin-bottom: -1rem;
+  }
+}
+
+.musik {
+  padding: 5em 0;
+
+  audio {
+    width: 150px;
+  }
+
+  &__cover {
+    width: 100%;
+    box-shadow: 4px 7px 100px 40px rgba(51, 51, 51, 0.05);
+  }
+
+  &__song-title {
+    display: inline;
+  }
+
+  &__controls {
+    text-align: center;
+
+    &__icon {
+      width: 25px;
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    color: #858585;
+    a {
+      color: #1370fb;
+    }
+
+    &__title {
+      font-weight: bold;
+      color: #333;  
+    }
+  }
+
+  &__tracks__song {
+    padding: 1em 0;
+    
+    &__title {
+      display: inline-block;
+      width: 80px;
+      vertical-align: super;
+    }
+
+    audio {
+      vertical-align: sub;
+    }
   }
 }

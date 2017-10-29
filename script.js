@@ -4,6 +4,12 @@ $(document).ready(function() {
     $('.sidebar-nav__arrows--up').toggleClass("sidebar-nav__arrows--hidden")
     $('.sidebar-nav__arrows--down').toggleClass("sidebar-nav__arrows--hidden")
   });
+
+  $("audio").on("play", function() {
+      $("audio").not(this).each(function(index, audio) {
+          audio.pause();
+      });
+  });
 });
 
   // $('h3.list-header').on "click", (e) ->
