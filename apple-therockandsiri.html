@@ -1,180 +1,68 @@
+<!doctype html>
+<html class="staticrypt-html">
 <head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <title>Protected Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- do not cache this page -->
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
 </head>
-<body>
-  <div class="nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <a href="index">
-            <img class="nav__shapes" src="images/nav_lockup.svg" />
-          </a>
+
+<body class="staticrypt-body">
+<div class="staticrypt-page">
+    <div class="staticrypt-form">
+        <div class="staticrypt-instructions">
+            <p class="staticrypt-title">Protected Page</p>
+            <p></p>
         </div>
-        <div class="col-xs-6">
-          <div class="nav__links">
-            <a class="nav__link">Bløg</a>
-            <a href="musik" class="nav__link">Musik</a>
-            <a href="resume" class="nav__link">Resume</a>
-            <a href="contact" class="nav__link">Contåct</a>
-          </div>
-        </div>
-      </div>
+
+        <hr class="staticrypt-hr">
+
+        <form id="staticrypt-form" action="#" method="post">
+            <input id="staticrypt-password"
+                   type="password"
+                   name="password"
+                   placeholder="passphrase"
+                   autofocus/>
+
+            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
+        </form>
     </div>
-  </div>
-  <div class="sidebar-nav sidebar-nav--mobile-only">
-    <div class="sidebar-nav__header">
-      <img class="sidebar-nav__shapes sidebar-nav__shapes--desktop" src="images/home_lockup.svg" />
-      <a href="index"><img class="sidebar-nav__shapes sidebar-nav__shapes--mobile" src="images/mobile_header.svg" /></a>
-      <img class="sidebar-nav__shapes sidebar-nav__shapes--mobile  sidebar-nav__arrows sidebar-nav__arrows--down" src="images/closed-nav-s.svg" />
-      <img class="sidebar-nav__shapes sidebar-nav__arrows sidebar-nav__arrows--up sidebar-nav__arrows--hidden" src="images/opened-nav-s.svg" />
-    </div>
-    <div class="sidebar-nav__links">
-      <a class="sidebar-nav__link">Bløg</a>
-      <a href="musik" class="sidebar-nav__link">Musik</a>
-      <a href="resume" class="sidebar-nav__link">Resume</a>
-      <a href="contact" class="sidebar-nav__link">Contåct</a>
-    </div>
-  </div>
-  <div class="project-info">
-    <div class="container">
-      <div class="project-info__border row">
-        <div class="col-xs-8">
-          <h3 class="project-info__title">The Rock & Siri</h3>
-          <p>2017</p>
-          <p>B2C</p>
-          <p>Web</p>
-        </div>
-        <div class="col-xs-4">
-          <div class="project-info__actions">
-            <a href="waterproof"><img src="images/previous-nav.svg"></a>
-            <a href="molekule"><img src="images/next-nav.svg"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="marquee">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 center-xs">
-          <img src="images/siri-hero.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="three-up">
-    <div class="container">
-      <div class="row center-xs">
-        <div class="col-xs-10 col-sm-4">
-          <div class="three-up__content">
-            <h4 class="three-up__header">Overview</h4>
-            <p class="three-up__copy">
-              From concept to execution, my team worked with TBWA\Media Arts Lab to promote the use of Siri by one of the world’s most beloved Siri user - Dwayne ‘The Rock’ Johnson.
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-10 col-sm-4">
-          <div class="three-up__content">
-            <h4 class="three-up__header">Outcome</h4>
-            <p class="three-up__copy">
-              A 3:45 video was created with The Rock to demonstrate the power of Siri. With a homepage banner on apple.com, a takeover on Apple’s Siri page, as well as social promotion, the film generated over 14 million views in the first month.
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-10 col-sm-4">
-          <div class="three-up__content">
-            <h4 class="three-up__header">Team</h4>
-            <div class="three-up__copy">
-              <p>
-              Patrick Alfred, Sr. Visual Designer
-              <br>
-              <em>Kettle NYC/Apple</em>
-              </p>
-              <p>
-              Evan Walker, Sr. Art Director
-              <br>
-              <em>Kettle NYC/Apple</em>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="assets">
-    <div class="container">
-      <div class="row center-xs">
-        <div class="col-xs-9">
-          <img src="images/apple 3.png">
-          <img src="images/apple 2.png">
-          <img src="images/siri-ios.jpg">
-          <a href="https://www.youtube.com/watch?v=ufBLI6bB9sg" target="_blank">
-            <img class="assets__thumbnail" src="images/thumbnail-siri.jpg">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="nav nav--footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6"></div>
-        <div class="col-xs-6">
-          <div class="nav__links">
-            <a class="nav__link">Bløg</a>
-            <a href="musik" class="nav__link">Musik</a>
-            <a href="resume" class="nav__link">Resume</a>
-            <a href="contact" class="nav__link">Contåct</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="project-info">
-    <div class="container">
-      <div class="project-info__border row">
-        <div class="col-xs-8">
-          <h3 class="project-info__title">The Rock & Siri</h3>
-        </div>
-        <div class="col-xs-4">
-          <div class="project-info__actions">
-            <a href="waterproof"><img src="images/previous-nav.svg"></a>
-            <a href="molekule"><img src="images/next-nav.svg"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="sidebar-nav sidebar-nav--mobile-only sidebar-nav--footer">
-    <div class="sidebar-nav__links">
-      <a class="sidebar-nav__link">Bløg</a>
-      <a href="musik" class="sidebar-nav__link">Musik</a>
-      <a href="resume" class="sidebar-nav__link">Resume</a>
-      <a href="contact" class="sidebar-nav__link">Contåct</a>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-xs-12">
-          <a href="adidas">Adidas</a>
-          <a>Mayvenn</a>
-          <a>REI</a>
-        </div>
-        <div class="col-sm-3 col-xs-12">
-          <a href="apple">Apple</a>
-          <a href="grandma-museum">The Grandma Museum</a>
-          <a>Peek Messaging</a>
-        </div>
-        <div class="col-sm-3 col-xs-12">
-          <a href="hpe">Hewlett Packard Enterprise</a>
-          <a>Venn iOS</a>
-          <a>Poll Everywhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
+
+</div>
+<footer class="staticrypt-footer">
+    <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" crossorigin="anonymous"></script>
+
+<script>
+    document.getElementById('staticrypt-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var passphrase = document.getElementById('staticrypt-password').value,
+            encryptedMsg = '9990694036139ad1ddbb6eebe411aace55ee1f339591a05c1c26a73cb10ab977U2FsdGVkX1+RGaOUOtsiRLhqAGgbGWbw7T03CWlUKysTHaoqnBx7t5n7mgeUClm1wEJeFjKrz2bSk7cN1AdPY8kvNZXsVi1fWkv7WaHayDOTmkIf4uM/zs8mW5a+xBD90zA3+ySnxIqEx/wpeu49TFL9/RlvE4zK1AF9DslpUoVluxY/uCnlqdOdA9bkX10mMbawge3aFx2RarrHeaohtQXjtqWiiZYIMmPIeSxPS9eEvrjN7AiP4V3O959PsZXwa18RLfkakqNz/gLLsX+HwxLq+HnnqMwi7XSc5cplClhawtnXmvtGGkXPTYLF/3QdA7arsiDhJI8SBGa+vppBjAk8J+VnSDk8LFxIbrgrLyemTWJMaeRf5FKI5ACbrx5xtlltyb1bjNv3/CVxSWd/gBK8ugIIDzpYOdnqdExeZPHqGzqgdg/4GyoKo9KRNyAAhTS5CeOBsVz07GhUZt0dAG9tc/1OVTDcGvKKU6a95cyEcVMQLvTuO8Idj26++89T4vfz3AWdTR4ABNhKKB2MpMMCAe6xIOPK3fchhWr7w+tA5ZuGHeJbLtFSx1TJpGKJ4rTX5mMAKQHouZZuaaFz51qNZ0qzUbRoFLBG/HMes4cbk246g3Az8HrO3oi3xCZqM7Wo7xvGM2fM1aHXZqfe1P1vyoeoM7KRQ6n4QFCG4MufLSYuT/1S+YBoKrwaOzo+qtKvgezi0dVTb5Gutf+IMzncds+Aaen+HuIa2ODQsHI6a7neRTzPDPolGpk0GvykU6snbxA6QUjQhteK2XRRAbfdEBqmKNO1zSjA+2vFkeurUWUsCl5JzS89sy/pUlCkJ98eIBbaf3nWz1rPi1+boyJsIotm29Rh/Ww8HP1zv6Bt318hI1J0Ep+P7l5yvaHHt1Dx63Vgj3Gt50Wm9d4rInuXasm8Lut8M0O9+lz2Jdz3qjG+Od5CGlla3FWse2/k+hWOpDrfbjQYc1vQTQVuobP2LpqIz+66sUCviaeYzVMDVxaxwGf+RPVdqFbxJ2nv25fdEUhISJEsfnbrIFGOSWWPk5cv2n0xj3WzMR5unbvgFvYuTUGakaJwb2dlsKE3VtpDrFAWmszBtD48irhZlPhGIc8Byk9BRBfQapxB+zHlyrH+lLErXJ9LmchNbmq4WcPr9dteEJ8ERvO3OI8UJXOK5ykOoTP86ZxbfPYNmYXf3Re+yeZHn+53DFvZChxX32R2GpyIbO144Nncna0dmfGlNSkhL/EPWEUs4tXJivFrosltvqtfmWfsTSUjQFNJD9vMlfCl//FHEMWI9Z5CgN9K+WmoNJaSFXOZ7kGk7QJ/VxEiu1nRoqx3i6K/VrV8p7D0gDOlgPKad29dO9Gzgi7gQcm1ELIAJ7D7evZ1Yo4L7LAzUQa7jk5DLLmBToIqYBf/5HtCeJ3LW+p2C5HRdQauuFXsumDtUqiBo+MKy8hAwSdfU1NdD6H9o/RHkZQtapzY9wv6Fcewo9fT0znuIOh4uNq9MIeossfhB6Zl0obZyE0fTMuTFyKIyQ5PHxRjMPC8FFUGKvu3m5YngTX2Z9z5pPBYCvPaWjNt0ZTMhXZj9R0TGdGT7V29VfruFr1BAMu8Kupkt3Sl3kORrjAreg/QsMvR38ZBCwkIRDQEsb9/Xz0xqZzgfNUVLwNEOjru5aPW8LHjTO71ErRnmmSw9HmNteTdUdcOIazedS37Zmz01fAZre2DGWSr21lGq9i7k/v2kHE+vh0gaOWTwJe+b2mph8g2tMu0kc2W98MJj7sPLzaQuTexZD8LaEr3ES30WKwYrZ7nbiIo8QtP5PIr0uiAs9nAGUU7iwixxUX4JWuMu3X/6JZwleUivmg2vGdNKiUfSSYjz5sPqoFKBfS7RCec9JWUDyCWjc9vCiPEjg0gAQVFHZNrynBCzKKPrFTVYBXK91jTx+bxdhNveN7Gt/1famoW0lhVCpQayF75WFvYe1TMkLtunYyrzWyRD5mjruDD8ILXIrXZ6WAn7LkcZog9rl1gwGmAeE8PAEBhN4OiRGxR77AHNGRq+1QSmKQbjzzLbZmT8uF6IU5AxWpVZlmhZlVAAfE3k+m+kq1791iiXXhxsD3q80neEgVdDM/T9DNxdftRrcq9nKZZaW48rDK/fqbOpWEw7mN7q/GL1yD/9z9vBi48P+RYIq8nYPBzjwOQPQqoaGRdeThH2f1chLEiNkrtrM1Cqyo8RO7Kvimbmn3p3nWatRDWfro02MXMjgbJ+irYlWH7VGl+P0qqHa4XzK/nHNatH0+cQDKohX8GSyodqau0PXki9zvCgyuS57fMl6hyoVpFH3G1fXjS/Ccrz9k61Lx3v6FdjgT3TfuC+UCgiRq5/G3hk02kKpL74FfzwrGa0xpb1qzalLI+M9J3RdpM+QIYbQcXkKZ3aUOW/JzYT9KKHp5fh5aICVByXGDaltFcx2PMSRlsroXS7iG0tW98txjxml3zkATLkO7KYgTEuLiFBARdkduT3jsChB+keiuCyb5h7jP38TzAQjcAkI8kdfadreUuNXuUHC5Vx3PBw9AXaISIzUKCXMzlE6TmA1wxKDDu/UJzAae+nWVu5qwGN99OGmy0pCz1mf7DPW+IlipMOFQVaAXrh3ZJKNH/XI20YEsKMLagGTeLpnI0GeTXCwVtbLF8F3Q/yZSDAbJmy9TVXt+M+X6b8TO3jKvGGjbSlV98MkthZkoLoZc/7WMnyZ+ushgcDcb1ocyHQy8voq/4d5K2TBvE6VHtzBCjpAa0Q+uLaxi2tmJMt98xClkotzoKVk2Z2GQ2zuWgF4dPGMRexg5V+x4JlnspTs8bIX9OCgen7mBzkn6AWf9GeGKDHNDEXQLV3RD7KGvShxRnOlqp3hQk+VuLNvxmSWPVJkJFve3SlKw2JSyItiJNXc+cI/c9s+JMLStXqaLgwQwJO8Q56Ql4X5RBXCpUCN2dwlzeFzRWBZZffgXKxZ2xMNCwdVNm4m1qGH+M1+dBko1bW341EgPBtCx98JK/HaVTgf00Ms/vtBGLb9qtiyCJwrRsFTIekm69mRO7f9H98k48UJlCB625drWmXyGORkyi9GzWsrz8ZB3V+QVepGV0Sr9yjz/8H0+o/pjo8XGaO+WjwZjBX+DoQuIJRZNwbTwN1kjdnnjvurHKzNCO00IOubxb7bPcmh2DNBtK+gf1jYL5yKT0q1Y1caaklz2u9HTUEWMsArDzuauDGGESHQAsG3fFhoh4oHxOslePTsV2V7F2Wcgth2NKryvU5XlsutwORATPOhVoAJDVJASWcyRZrMeUYYNT1K6hnU3WLTrVifuG2GTa9fDSWMiPQppPJA3CLSga/tQ1yr4tc9xUGFYiAl29KUh5CRw7stcfP1agzH/fhUcU6+2dTwgR+FDX8VNhl6vAN7OxPCGI21UjPQ358831uAQ8lfMAoKKUg4ulaImaJ7wXh/iTtGXAhtqAUrMhyu8c9EzxRmNpXtFrKyNWXEsL/Pu2TP3f3aGEDrN/xzZ+z+krD/zsigbPkTWBM/SBZaWeWuXCfVb82Tsk8PnIJu1XJ81BMAOoljxAJVvF1zeq+a7qg3OpwDDYzUFZoW23TgHUEPWlBF+uxybYkEKrHy6NydbzTzzapNTqvLLNqztDgsMV8qQS8IHTzx4Iy7LzHZL3mrGWibRcx+K3ZbFc0nYKP/2NEG5GJBF4jO7amXVRQMy1epQyzA3Ss+jRhVtVi1tgJRWB3iMlv42XnvAMso2mXkdzL255yBQAl8jeT/qI+DIm2/3PExaqGwr9oQg0t1TOSIXeoNZU+GdFXkvrw0r/5WtRr//EagrhIYzLI9ucWaRRIp+c//1HzxKSjtyGGJOzdGRXRS0QItKrmHfpSKl8IwvoaHSIcbzAcDVt4t4SkyQT/1QIpQoVCtay+EQ4B2NeKkz3pEEwWg4JQ3zrA5BVHgNlEMq56kFXrQdvLY/9eZf16fo1UjOQL5l6CWR3IpDy3l+RIy6IIM50I1+iYjPEofyuCqiX/aDDlG8KkofnjVKU47s9Zam5FCy2fOBbkLjh73gpvZdXCzu0BOTUhNpoDsPlwX8chHW3jF6lS5pgty0fliec8P2ZwUJUQt8CSpQ78vndwZVhJJ954yJs81kIyOp2zETeHNzBDcXjl5261EKweiMMKxtHcyNV9ZRXNJrCUFpaIeczzEYVzBXKyeTfEWezoGZtFsAxeU01Ozr/EgMbbjc5ozjO3u9zYs9cgGG1cQ8zvExs82KwxjVhnJVJrKI0qcquHzpJML3l6Gb+amcg0n9aYP84G5YrBvCp0316U//3rnvhMOk2ftqJNuAADSlqHRoUqCZTLNCwGE0uykl3DsBqRplKRH7n62c9hUMWQ0xwYiFsd6DHGHxblEt9spXbimnbim8EBM7ZZgF8Y4AsSmZ9l3ehVf796sJmoCACOd0TGeKCSdoQGqe5CWHYo7u4R72OoUUUuj1zzRDvZxSn6x58IQWxmDOL/InmA+tfWfR/4WUSnzIF6VKCqbClVleKKai/1WAHa2UW+5/6t6UF+SreHJplUtC22G1LFDKBXINx/xy7sUywxuP5wl5UEvjn97CvFPL7o8MhUgxWbBTngQYPZJ9qSrkcJXb36TP6NnND+3H31XH9ED8DbavMlABo7TyS4KI7FS1wq3lgUZ2J9DrEE/8wyFXxl8BPCPMT0VNTSA4ankCtL2XM+fx/VqCuoDFrHztvkGJAzxYzpTbr/5UCHzdDzSJ3am5yI+h1dkAptQihV7Cqvs5HgVkKbl9hmujarH5RV+aweoytDunXK4Ag8vZ/U94GTilKqYuYxVIPZbdE+02LwRD8fieuEpzBHIPaS/XxaeuRoRo9XAI3WTl5JzWLN9txYW/ebMAoBduh3rJZttfDQrgQdFDg50Q96YXoC4DJ5i6nffskSDM5GPem0A8YsremBnSPFXAIoqfMVY6080EQxkjJYOKO43kl+jztQdDIInEzVdnAstQribjP40V9UKKhCxx5BYdaWI3fgpI4Xv6lebfNWoOlkra3LShGRoOsZW9DLKGNWyAAwleK/pKHcRRsC7+MTYsJH757d7kjStHP98W02+v02ibTn1TInGgfDVfjJcH58nXVlh2NgjdAa9A7Kyyq/Ik/SkNlenPK+jPmz2v0c8BsKoy7f+8wSzoNnmkHQEI/nT1tXLtQJ8cIrzWjIdbFDtTd+KvTGzaK8k63NU2FEOVzgaARQayuWIhWsPQqnL1JdEKiKuNZ/oCHjLlgg1XQbIy3MOqc25hhpL/bE2GubFLSy4iGcVItgwb26UxU/EgK5PaxxDV7D6TINgRsLwmCBmmznT1VM9ke4MXAYbkYZq/kjkVO/5ePjG3kl8AYO7NjWmr5lwLZIKz344DzeIAMY6B2RqqFiqmBhHtzxLMzfyBy56oEMj2PntQROY3JKCNntNkhBAKMx1ALyB33qt1fnguOONzkZfFpBxyzYglS202ObiayiAE6CNv8BdzKYPy33R3cijqqi93cxYV+lUkB0ae86WHmEX7v0+QkZ0mn5E3G+t5Bjw13bZ41xxZw/CceQzKfyUQUfGkaOxPXoBzD0WiOFxI264AUPjeYm0lbkAM17WDPKU4R+w/gmT2YDbprA2xlavNMBbhLwlXmGTw04hryYbfLk/1OuO5xKlXJ/IB+jKiSK+Tz7a0DoyBm0B+UL5tdA62v5pxBhZPsdBCvFQgWRDzddjcDVGGG4oswJ0taDi1tPyQ/m31rRpToAxNNDmt+tkfru1tuREjcgtreGbijtml9PogHuf4re2whLt5VKrbR5MU+su5nuYKv8gsyMn9DZT6ma6rHowyJapLpHPWMn17zYNZF3viqgWaeqTZec/AdVS0/FJq81pN5zU8H+jIACGwj2wb+P2zGpEEPhDhKtx9NUEInLpqQcIo1xuX8/7gsS+0OVEK+LZ5iKx+2ggkht6tyNSYvviC1RSY4mLOVweGClv052Nv3auywuTC0ESuBa6zSvNfC6XS6Rpo20YJXXDTYoPPqU+0y88RI2ZFkRa7hsfKrI3iJhP+XGoLqlQ7Xl4pG2xto/yA0lm7k1oSuZ8cNHSPsM6FNte3PJnmXn56i46QMGK25AAlzTYaTRDRUDkBWdDeIeMinYzL+XPvgcO+Y2w018YVSW138gveHwPff/1bNTb/dHCIFotGcBpaJ6NbbUB3WSEx0RJ7uu1diKcEJyJXoLGL78PxNYRdxxO+3wuzS1pJBYbjErkf6TIHDo9X36mc4Ff0atmA9x9OpSA/QTSaF10v7/6hfmYoDibMTe6a+Qn7Sxf5YKqU62LZ7yh1ThgkPfGq5O/5n5GGjZtRfcl0a77/BuE77qD3izr5IkHl0dVo03uI78jDMURVF9nD+D0wrtkZjHkcQYyhAShpxO6Ax/VegqeLabylIJOsDWtNmQmKIE3KTL6fDtjpYvAv3gJ3Vh76ldEaFViwRdC/a8+3X0CqBFxEMRVV367rKxRYpcUL0i+L9QuUSno02+OOKZG00MeIg0ILwMreHrfEcK9LuHA90OH0fnukoCQ3cSesQ3S2qQKNRB1hfHO2Y2A2XVr5Pr+Cc8ZRHdJgiYvvqG3zELYLJZEKzsKa0fyEOk3youuGqNEZKUQNv83Tuvx8VU+VlkwAB+etmCkXMkQ7c0oH5Pa3xgRNkJ4IM6HlvmgvStDS0GPTUwUBcRHBDS7TgOXYM21RBSut2L7QfVDGUVPh/GyGY08uZYXiG4sJHXjgCT/SEkTjIrSshpy4gn1thHUCyEMQVFQc3R9yIrf16lVsgQrupxo82dcQGRtskG4WAp3omIAgXymNUyCD0sqtZktOEFQECO4p9jC39CVHYjSTS2NLMVVkbtUKG1O7g+VvEXPNeH0/SZj6gBfzAfbILMhYlbBEip+6J1KtEjRuRnwOKLpP3LB28NIaUX6MQEX1bY2l9hdyEhwWsT/NJBV/8AVzvdaNgc4c4e7axsOkVXktNi8nEtqyHeVeZJtQ9yqS3A7ClnAejc1+0Ud23qpPHvseFeLtvkYG2Q3IafXjZ4k/Lu/41g/GndIYd43YEcizHQHyPlgnRr07SPlyDxvTPzM5qQO1CaZwRFr1oTrBlyK4oRFmbW2Z+ncF7qquKOGQyVSNX+cxevRNz3Bj7A9LRJSsNYAKMyLTLV0URzRDZPfRe0R7aMQsa3wofZb9vksI+GE869qcsVWhXBzzUsdaJqlWpeW9HFPUBggc8c5bFezlGcaSs5DgaEnynICZHBYS29oBZ7XwykYPkJB7qY4imbkT5MkqZEUbIow6qq7bNHASbw6846BR5wil0mSIvYCOjra3BdygHENiwEwaVAKV42a8U4l1Y+R/IoYla+Vmat7cNuc+qXW3hKUS7gzajmA5fi4EribGHUxFRewd2hUdtiJ6WHkC93lvAp4sVxmr+4F7dHvx7/HZgnw3fQJ6PL8XJ1M4Do9Xhe+q6XA1gqqNf6mLLgst1AyS37bRi/3GrQsX8W2umxwGWOMDNS/1a51pCsXxhmlJz8QLwUuDp9lnY91p1+HCNHZrMtwHy68DTMV4X66aa0d9IPVuRtLH8mnGUeYZh9K0AlKJeGJejgvMHVcFEKCSKvXnlprVOHjTGDNxu7GZQ6cF2yxLBt+E39CbzeD4FAtqZIbgcqjCj+hfFwiuhx/TCyKB+MkZPe7h2ZL7uJB9VYt4vh3it2BCpp27K/nvMPOkrqWak4WiOCqdOF8708OSebrqpZ3j0owFlxcwwLanvoAJe6fvcN12YiM4sF+j6PuVrlWffRb+0lTX5BJy4UwhKhUg9MKsUq4x3TfGYXkA/7YHk6oT3RUpAm/JTweQ7S+L1zVctmDMm8Lbjv46XXugPEtNILI3lynL9Vup79n0FekFFtS+vPZxDPydlIOkre2/KKjvM9+8Q0QN14NdPzK6YCsAcywaImZBgh2+fyA+UIXmh6KODPjeL+VSiAM+0eLsCe27l7k+A6l+oLqfrYD0hVCQRmDNjKVXQgFDT6vq29cPpg2LHiqiCs9i0aEQNgSGYyXE0PnnWJzY1BNJliZgm63rSZ78PYirPcgVbf+h/PnjL+JVEYXb4PvbWGHZfCrXtLmzhJojmSxlJXFBzuUP/qUxK6GC9JID+s8WQ7vt1haz5KfUii+/X8w0F6upsnPOBw0sPkTjVtJ9Wvs5O+uwXE5EY7xxI6NCL6vyz6uUgUDz2i3BkpR7N7t/pt0/UXB9Qlwkx/ekVuPIo/kdQdhMrSzgSJSFVA0qSWBGnY2YIx1ewUxnG1/6Mh48i2NgPwNSzABWhWmK/hBsm6nIrtbSJV1eE6XKCsiyfQ/pNP77Jkaxzd5JpUPnmeXC+5PSVi2phiIA2OaxTpsl2A2/x5+2/ed6dJ4pZUf2s06pzGdkr/k9JK9YFafcVMISO6X8/8Ajcqcerh9WdqlHbKf118y9Fb3Eh3m2DhYfSCNCL3yh0rMPFDT2zi5EglmEu+It9jZa7d627uu6wpVaD+bFZKgsRCBoXZFc4bte89dgV0MenyEer7ae9jqu80tuDobyiAHy1yp68n4t6ONTTrSLmk2wj9LEoMCM4QpbIxESaZVLSiucbcDLvjjSOHSVuswylAQ==',
+            encryptedHMAC = encryptedMsg.substring(0, 64),
+            encryptedHTML = encryptedMsg.substring(64),
+            decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+        if (decryptedHMAC !== encryptedHMAC) {
+            alert('Incorrect password. Email patrick@patrickalfred.com for access');
+            return;
+        }
+
+        var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+
+        document.write(plainHTML);
+        document.close();
+    });
+</script>
 </body>
+</html>

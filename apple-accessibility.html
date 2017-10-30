@@ -1,177 +1,68 @@
+<!doctype html>
+<html class="staticrypt-html">
 <head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <title>Protected Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- do not cache this page -->
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
 </head>
-<body>
-  <div class="nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <a href="index">
-            <img class="nav__shapes" src="images/nav_lockup.svg" />
-          </a>
+
+<body class="staticrypt-body">
+<div class="staticrypt-page">
+    <div class="staticrypt-form">
+        <div class="staticrypt-instructions">
+            <p class="staticrypt-title">Protected Page</p>
+            <p></p>
         </div>
-        <div class="col-xs-6">
-          <div class="nav__links">
-            <a class="nav__link">Bløg</a>
-            <a href="musik" class="nav__link">Musik</a>
-            <a href="resume" class="nav__link">Resume</a>
-            <a href="contact" class="nav__link">Contåct</a>
-          </div>
-        </div>
-      </div>
+
+        <hr class="staticrypt-hr">
+
+        <form id="staticrypt-form" action="#" method="post">
+            <input id="staticrypt-password"
+                   type="password"
+                   name="password"
+                   placeholder="passphrase"
+                   autofocus/>
+
+            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
+        </form>
     </div>
-  </div>
-  <div class="sidebar-nav sidebar-nav--mobile-only">
-    <div class="sidebar-nav__header">
-      <img class="sidebar-nav__shapes sidebar-nav__shapes--desktop" src="images/home_lockup.svg" />
-      <a href="index"><img class="sidebar-nav__shapes sidebar-nav__shapes--mobile" src="images/mobile_header.svg" /></a>
-      <img class="sidebar-nav__shapes sidebar-nav__shapes--mobile  sidebar-nav__arrows sidebar-nav__arrows--down" src="images/closed-nav-s.svg" />
-      <img class="sidebar-nav__shapes sidebar-nav__arrows sidebar-nav__arrows--up sidebar-nav__arrows--hidden" src="images/opened-nav-s.svg" />
-    </div>
-    <div class="sidebar-nav__links">
-      <a class="sidebar-nav__link">Bløg</a>
-      <a href="musik" class="sidebar-nav__link">Musik</a>
-      <a href="resume" class="sidebar-nav__link">Resume</a>
-      <a href="contact" class="sidebar-nav__link">Contåct</a>
-    </div>
-  </div>
-  <div class="project-info">
-    <div class="container">
-      <div class="project-info__border row">
-        <div class="col-xs-8">
-          <h3 class="project-info__title">Accessibility</h3>
-          <p>2017</p>
-          <p>B2C</p>
-          <p>Web</p>
-        </div>
-        <div class="col-xs-4">
-          <div class="project-info__actions">
-            <a href="rei"><img src="images/previous-nav.svg"></a>
-            <a href="poll-everywhere"><img src="images/next-nav.svg"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="marquee">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 center-xs">
-          <img src="images/accessibility-hero.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="three-up">
-    <div class="container">
-      <div class="row center-xs">
-        <div class="col-xs-10 col-sm-4">
-          <div class="three-up__content">
-            <h4 class="three-up__header">Overview</h4>
-            <p class="three-up__copy">
-              Apple’s industry-leading devotion to accessibility has been an inspiration and valuable component to the Apple name. I was asked to design an updated accessibility site that communicated the product accessibility features.
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-10 col-sm-4">
-          <div class="three-up__content">
-            <h4 class="three-up__header">Outcome</h4>
-            <p class="three-up__copy">
-              A 27 page site detailing all accessibility features for Mac, iPad, iPhone, Apple Watch, and Apple TV.
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-10 col-sm-4">
-          <div class="three-up__content">
-            <h4 class="three-up__header">Team</h4>
-            <div class="three-up__copy">
-              <p>
-              Patrick Alfred, Sr. Visual Designer
-              <br>
-              <em>Kettle NYC/Apple</em>
-              </p>
-              <p>
-              Shannon Ling, Visual Designer
-              <br>
-              <em>Kettle NYC/Apple</em>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="assets">
-    <div class="container">
-      <div class="row center-xs">
-        <div class="col-xs-9">
-          <img src="images/acc-mac.jpg">
-          <img src="images/acc-ipad.jpg">
-          <img src="images/acc-iphone.jpg">
-          <img src="images/acc-watch.jpg">
-          <img src="images/acc-tv.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="nav nav--footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6"></div>
-        <div class="col-xs-6">
-          <div class="nav__links">
-            <a class="nav__link">Bløg</a>
-            <a href="musik" class="nav__link">Musik</a>
-            <a href="resume" class="nav__link">Resume</a>
-            <a href="contact" class="nav__link">Contåct</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="project-info">
-    <div class="container">
-      <div class="project-info__border row">
-        <div class="col-xs-8">
-          <h3 class="project-info__title">Accessibility</h3>
-        </div>
-        <div class="col-xs-4">
-          <div class="project-info__actions">
-            <a href="rei"><img src="images/previous-nav.svg"></a>
-            <a href="poll-everywhere.com"><img src="images/next-nav.svg"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="sidebar-nav sidebar-nav--mobile-only sidebar-nav--footer">
-    <div class="sidebar-nav__links">
-      <a class="sidebar-nav__link">Bløg</a>
-      <a href="musik" class="sidebar-nav__link">Musik</a>
-      <a href="resume" class="sidebar-nav__link">Resume</a>
-      <a href="contact" class="sidebar-nav__link">Contåct</a>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-xs-12">
-          <a href="adidas">Adidas</a>
-          <a>Mayvenn</a>
-          <a>REI</a>
-        </div>
-        <div class="col-sm-3 col-xs-12">
-          <a href="apple">Apple</a>
-          <a href="grandma-museum">The Grandma Museum</a>
-          <a>Peek Messaging</a>
-        </div>
-        <div class="col-sm-3 col-xs-12">
-          <a href="hpe">Hewlett Packard Enterprise</a>
-          <a>Venn iOS</a>
-          <a>Poll Everywhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
+
+</div>
+<footer class="staticrypt-footer">
+    <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" crossorigin="anonymous"></script>
+
+<script>
+    document.getElementById('staticrypt-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var passphrase = document.getElementById('staticrypt-password').value,
+            encryptedMsg = '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',
+            encryptedHMAC = encryptedMsg.substring(0, 64),
+            encryptedHTML = encryptedMsg.substring(64),
+            decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
+
+        if (decryptedHMAC !== encryptedHMAC) {
+            alert('Incorrect password. Email patrick@patrickalfred.com for access');
+            return;
+        }
+
+        var plainHTML = CryptoJS.AES.decrypt(encryptedHTML, passphrase).toString(CryptoJS.enc.Utf8);
+
+        document.write(plainHTML);
+        document.close();
+    });
+</script>
 </body>
+</html>
