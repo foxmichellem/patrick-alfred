@@ -277,8 +277,24 @@ a {
 
 .marquee {
   padding-top: 4.5em;
+
   img {
     max-width: 100%;
+  }
+
+  &__image {
+
+    &--desktop {
+      @media (max-width: 720px) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @media (min-width: 720px) {
+        display: none;
+      }
+    }
   }
 }
 

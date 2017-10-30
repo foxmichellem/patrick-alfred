@@ -1097,6 +1097,12 @@ a {
   padding-top: 4.5em; }
   .marquee img {
     max-width: 100%; }
+  @media (max-width: 720px) {
+    .marquee__image--desktop {
+      display: none; } }
+  @media (min-width: 720px) {
+    .marquee__image--mobile {
+      display: none; } }
 
 .project-info {
   padding: 1.5em 0.5em 0.5em; }
