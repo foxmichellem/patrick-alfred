@@ -153,6 +153,10 @@ a {
     display: inline;
     height: 100%;
 
+    @media (min-width: 720px) {
+      display: none;
+    }
+
     &--hidden {
       display: none;
     }
@@ -220,6 +224,14 @@ a {
 
     &:hover {
       filter: opacity(50%);
+    }
+
+    &--hidden {
+      visibility: hidden;
+
+      @media (max-width: 1060px) {
+        display: none;
+      }
     }
 
     &__image {
@@ -401,6 +413,10 @@ a {
     padding: 0.6em 0;
     display: block;
     color: #333;
+  }
+
+  img {
+    height: 12px;
   }
 }
 

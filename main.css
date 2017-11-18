@@ -1011,6 +1011,9 @@ a {
     float: right;
     display: inline;
     height: 100%; }
+    @media (min-width: 720px) {
+      .sidebar-nav__arrows {
+        display: none; } }
     .sidebar-nav__arrows--hidden {
       display: none; }
   .sidebar-nav--mobile-only {
@@ -1058,6 +1061,11 @@ a {
     text-align: left; }
     .portfolio__item:hover {
       filter: opacity(50%); }
+    .portfolio__item--hidden {
+      visibility: hidden; }
+      @media (max-width: 1060px) {
+        .portfolio__item--hidden {
+          display: none; } }
     .portfolio__item__image {
       max-width: 100%;
       width: 100%;
@@ -1166,6 +1174,8 @@ a {
     padding: 0.6em 0;
     display: block;
     color: #333; }
+  .footer img {
+    height: 12px; }
 
 .resume {
   color: #858585;
