@@ -1252,7 +1252,7 @@ a {
     padding: 1em 0; }
     .musik__tracks__song__title {
       display: inline-block;
-      width: 80px;
+      width: 100px;
       vertical-align: super; }
     .musik__tracks__song audio {
       vertical-align: sub; }
