@@ -1164,9 +1164,6 @@ a {
     max-width: 100%; }
   .assets__thumbnail:hover {
     filter: brightness(50%); }
-  .assets .video {
-    margin: 3em 0;
-    box-shadow: 4px 7px 100px 40px rgba(51, 51, 51, 0.2);}
 
 .footer {
   padding: 2em 0; }
